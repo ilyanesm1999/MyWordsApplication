@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    >
+    <!--<ImageView
+        android:id="@+id/ivMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitStart"
+        android:visibility="visible"
+        android:src="@drawable/sample"
+        android:paddingRight="4dp"
+        >
+    </ImageView>-->
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:background="@color/blue">
+    <TextView
+        android:layout_marginLeft="200dp"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/scoreTextView"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/BLACK"
+        android:textStyle="italic"
+        />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/blue">
+    <Button
+        android:background="@color/yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="сдаться"
+        android:id="@+id/buttonLoose"
+        android:onClick="loose"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/BLACK"/>
+
+    <Button
+        android:background="@color/yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/buttonClear"
+        android:layout_gravity="right"
+
+        android:onClick="refreshGameField"
+        android:layout_marginLeft="130dp"
+        android:textColor="@color/BLACK" />
+
+    <Button
+        android:background="@color/yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="в меню"
+        android:onClick="goBack"
+        android:id="@+id/buttonBack"
+        android:layout_marginLeft="280dp"
+        android:textColor="@color/BLACK"/>
+
+
+
+</RelativeLayout>
+    <TableLayout
+        android:splitMotionEvents="true"
+        android:id="@+id/myGameTableLetters"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableLayout>
+</LinearLayout>
